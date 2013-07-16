@@ -111,7 +111,7 @@
 
 
         // set height
-        [contentView addConstraint:[NSLayoutConstraint constraintWithItem:edgeView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:indicatorViewBounds.size.height]];
+        [contentView addConstraint:[NSLayoutConstraint constraintWithItem:edgeView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:indicatorViewBounds.size.height+10]];
 
         if (edgeSide & BSRefreshableScrollViewSideTop) {
             // above the content view top
